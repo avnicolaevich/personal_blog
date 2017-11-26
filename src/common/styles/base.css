@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Hind';
+  src: url('../../../assets/fonts/Hind-Light/Hind-Light.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Hind';
+  src: url('../../../assets/fonts/Hind-Medium/Hind-Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Hind';
+  src: url('../../../assets/fonts/Hind-Regular/Hind-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../assets/fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../assets/fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'MrsSaintDelafield';
+  src: url('../../../assets/fonts/MrsSaintDelafield-Regular/MrsSaintDelafield-Regular.woff') format('woff');
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+html {
+  font-family: Hind-Regular, Helvetica, sans-serif;
+  font-size: 16px;
+}
+body {
+  min-width: 320px;
+  position: relative;
+  background: #f9f9fb;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  opacity: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}

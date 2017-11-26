@@ -1,0 +1,13 @@
+.error {
+  width: 100%;
+}
+.error__heading {
+  position: relative;
+  text-align: center;
+}
+.error__heading-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18.75rem;
+  color: #363636;
+}
