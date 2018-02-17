@@ -1,0 +1,159 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel__slides {
+  position: relative;
+  width: 100%;
+}
+.carousel .pager {
+  position: absolute;
+  right: 80px;
+  top: 45%;
+  transform: rotate(180deg);
+}
+.carousel .pager__item {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.carousel .pager__item_active {
+  background: #fff;
+}
+.carousel .pager__item:last-of-type {
+  margin-bottom: 0;
+}
+.carousel .slide {
+  position: relative;
+  display: none;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+.carousel .slide.slide_active {
+  display: block;
+}
+.carousel .slide > img {
+  width: 100%;
+}
+.carousel__caption {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -30px;
+  top: 200px;
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.carousel .control.icon-left:before {
+  position: absolute;
+  color: #fff;
+  transform: rotate(-90deg);
+  right: 37px;
+  top: 315px;
+  cursor: pointer;
+}
+.carousel .control.icon-right:before {
+  position: absolute;
+  color: #fff;
+  transform: rotate(-90deg);
+  right: 37px;
+  top: 90px;
+  cursor: pointer;
+}
+.carousel__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5rem;
+  max-width: 28rem;
+}
+.carousel__title-subheading {
+  display: block;
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.carousel__title-heading {
+  text-shadow: 1px 1.7px 0 rgba(0, 0, 0, 0.44);
+  color: #fff;
+  font-family: 'Hind', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .carousel__caption {
+    top: 173px;
+  }
+  .carousel .pager {
+    top: 43%;
+  }
+  .carousel .control.icon-left:before {
+    top: 290px;
+  }
+  .carousel .control.icon-right:before {
+    top: 65px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .carousel__caption {
+    top: 131px;
+  }
+  .carousel .pager {
+    top: 43%;
+  }
+  .carousel .control.icon-left:before {
+    top: 245px;
+  }
+  .carousel .control.icon-right:before {
+    top: 20px;
+  }
+}
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 319px) {
+  /**/
+}
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}

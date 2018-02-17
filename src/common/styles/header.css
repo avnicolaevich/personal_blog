@@ -1,0 +1,103 @@
+.header {
+  background: #212429;
+}
+.header__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  z-index: 2;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #2e303c;
+}
+.header__dropdown-menu-item {
+  width: 100%;
+}
+.header__dropdown-menu-link {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .4s ease;
+}
+.header__dropdown-menu-link:hover,
+.header__dropdown-menu-link:focus {
+  color: #999;
+  text-decoration: underline;
+}
+.header__dropdown-menu.open {
+  display: block;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav-menu {
+  line-height: 3.5rem;
+  flex-basis: 5%;
+}
+.header__nav-menu-icon {
+  display: inline-block;
+  border-right: 3px solid #2e303c;
+  border-left: 3px solid #2e303c;
+}
+.header__nav-menu-icon:hover i,
+.header__nav-menu-icon:focus i {
+  transition: all .4s ease;
+  color: #999;
+}
+.header__nav-menu-icon > i {
+  color: #fff;
+  margin: 0;
+}
+.header__nav-menu-icon > i::before {
+  width: 3em;
+}
+.header__nav-logo {
+  line-height: 3.5rem;
+  flex-basis: 70%;
+}
+.header__nav-logo-link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+.header__nav-list {
+  display: flex;
+  line-height: 3.5rem;
+}
+.header__nav-list-item {
+  padding: 0;
+  margin-right: -3px;
+}
+.header__nav-list-item:last-child {
+  margin-right: 0;
+}
+.header__nav-list-link {
+  display: inline-block;
+  border-right: 3px solid #2e303c;
+  border-left: 3px solid #2e303c;
+}
+.header__nav-list-link:hover i,
+.header__nav-list-link:focus i {
+  transition: all .4s ease;
+  color: #999;
+}
+.header__nav-list-link > i {
+  color: #fff;
+  margin: 0;
+}
+.header__nav-list-link > i::before {
+  width: 3em;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .header__nav {
+    justify-content: space-between;
+  }
+}

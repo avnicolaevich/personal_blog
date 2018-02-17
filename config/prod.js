@@ -12,7 +12,7 @@ const prod = (config, _path) => {
     //     }
     // })];
     // config.plugins = config.plugins.concat(uglify);
-    config.output.path =  _path;
+    config.output.path = _path;
 
     return config;
 };

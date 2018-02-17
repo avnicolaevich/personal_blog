@@ -1,4 +1,7 @@
 import './index.less';
-document.write('Hello world');
+import { Carousel } from '../common/scripts/carousel.js';
 
-window.$('body').addClass('test');
+const headerCarousel = new Carousel('.header-carousel', {withPager:true});
+$('.header__nav-menu-icon').click(function () {
+    $('.header__dropdown-menu').toggleClass('open');
+});

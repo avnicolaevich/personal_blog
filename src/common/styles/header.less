@@ -1,0 +1,108 @@
+@mainBannerBG: #212429;
+@navIconBorder: #2e303c;
+@descriptionTextColor: #999;
+.header {
+  background: @mainBannerBG;
+  &__dropdown {
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      z-index: 2;
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      background: rgba(0,0,0,.8);
+      border: 3px solid #2e303c;
+      &-item {
+        width: 100%;
+      }
+      &-link {
+        display: block;
+        color: #fff;
+        padding: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all .4s ease;
+        &:hover,
+        &:focus {
+          color: #999;
+          text-decoration: underline;
+        }
+      }
+    }
+    &-menu.open {
+      display: block;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &-menu {
+      line-height: 3.5rem;
+      flex-basis: 5%;
+      &-icon {
+        display: inline-block;
+        border-right: 3px solid #2e303c;
+        border-left: 3px solid #2e303c;
+        &:hover i, &:focus i {
+          transition: all .4s ease;
+          color: @descriptionTextColor;
+        }
+        & > i {
+          color: #fff;
+          margin: 0;
+          &::before {
+            width: 3em;
+          }
+        }
+      }
+    }
+    &-logo {
+      line-height: 3.5rem;
+      flex-basis: 70%;
+      &-link {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+      }
+    }
+    &-list {
+      display: flex;
+      line-height: 3.5rem;
+      &-item {
+        padding: 0;
+        margin-right: -3px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      &-link {
+        display: inline-block;
+        border-right: 3px solid #2e303c;
+        border-left: 3px solid #2e303c;
+        &:hover i, &:focus i {
+          transition: all .4s ease;
+          color: @descriptionTextColor;
+        }
+        & > i {
+          color: #fff;
+          margin: 0;
+          &::before {
+            width: 3em;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .header__nav {
+    justify-content: space-between;
+  }
+}
+
